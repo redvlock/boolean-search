@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/warlock/boolean-search#readme",
   "dependencies": {
-    "cleanchar": "0.0.2",
+    "cleanchar": "0.0.4",
     "tck": "^1.0.7"
   }
 }
