@@ -10,8 +10,8 @@ module.exports = (text, search) => {
     const cleantext = ` ${cleanchar(text, { social: true, spanish: true })} `
     const boolres = searchbool(search)
     if (boolres.length === 1 && boolres[0].length === 1) {
-      const stringtocheck = cleanchar(` ${boolres[0][0]} `)
-      return cleantext.indexOf(stringtocheck) > -1? { res: true, desc: boolres[0][0] } : { res: false }
+      const stringtocheck = cleanchar(boolres[0][0], { spanish: true, social: true })
+      return cleantext.indexOf(` ${stringtocheck} `) > -1? { res: true, desc: boolres[0][0] } : { res: false }
     } else {
       if (boolres.length > 1) {
         for (let i = 0; i < boolres.length; i++) {
