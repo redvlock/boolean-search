@@ -7,10 +7,10 @@ module.exports = (text, search) => {
   if (tck.isEmpty(text)) return { res: false }
   else if (tck.isEmpty(search) || !tck.isString(search)) return { res: true }
   else if (tck.isString(search)) {
-    const cleantext = `-${cleanchar(text, { social: true, spanish: true })}-`
+    const cleantext = ` ${cleanchar(text, { social: true, spanish: true })} `
     const boolres = searchbool(search)
     if (boolres.length === 1 && boolres[0].length === 1) {
-      return cleantext.indexOf(`-${boolres[0][0]}-`) > -1? { res: true, desc: boolres[0][0] } : { res: false }
+      return cleantext.indexOf(` ${boolres[0][0]} `) > -1? { res: true, desc: boolres[0][0] } : { res: false }
     } else {
       if (boolres.length > 1) {
         for (let i = 0; i < boolres.length; i++) {
