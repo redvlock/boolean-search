@@ -1,6 +1,6 @@
 {
   "name": "boolean-search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Boolean Query Search",
   "main": "index.js",
   "scripts": {
