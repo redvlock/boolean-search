@@ -7,8 +7,9 @@ module.exports = (text, search, options) => {
   if (tck.isEmpty(text)) return { res: false }
   else if (tck.isEmpty(search) || !tck.isString(search)) return { res: true }
   else if (tck.isString(search)) {
-    const cleantext = ` ${cleanchar(text, options)} `
     const boolres = searchbool(search)
+    const cleantext = ` ${cleanchar(text, options)} `
+    
     if (boolres.length === 1 && boolres[0].length === 1) {
       const stringtocheck = cleanchar(boolres[0][0], options)
       return cleantext.indexOf(` ${stringtocheck} `) > -1? { res: true, desc: boolres[0][0] } : { res: false }
