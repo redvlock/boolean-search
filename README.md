@@ -1,8 +1,9 @@
 # boolean-search
 Boolean Query Search
 
-[NPM Homepage] (https://www.npmjs.com/package/boolean-search)
-[Github Homepage](https://github.com/warlock/boolean-search)
+[NPM](https://www.npmjs.com/package/boolean-search)
+
+[Github](https://github.com/warlock/boolean-search)
 
 ### NPM Install
 ```sh
