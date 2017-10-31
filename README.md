@@ -1,8 +1,21 @@
 # boolean-search
 Boolean Query Search
 
+[NPM Homepage] (https://www.npmjs.com/package/boolean-search)
+[Github Homepage](https://github.com/warlock/boolean-search)
+
+### NPM Install
+```sh
+npm i boolean-search -S
+```
+
+### Yarn Install
+```sh
+yarn add boolean-search
+```
+
 #### bSearch(text, query, options)
-Enable "[cleanchar](https://www.npmjs.com/package/cleanchar)" options for clean characters.
+Enable "[cleanchar](https://www.npmjs.com/package/cleanchar)" options for clean query and text special characters.
 * social
 * spanish
 
