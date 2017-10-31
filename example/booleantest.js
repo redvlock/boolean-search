@@ -1,6 +1,6 @@
 const bool = require('../src/searchbool.js')
 
-const boolarr = bool('hello AND bye OR debian AND redhat OR josep AND hello AND foo')
+const boolarr = bool('hello AND 1AND1 AND bye OR debian AND redhat OR josep AND hello AND foo')
 console.log(JSON.stringify(boolarr))
 
 const boolarr1 = bool('hello AND bye')
