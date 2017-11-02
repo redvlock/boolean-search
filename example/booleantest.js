@@ -17,3 +17,6 @@ console.log(JSON.stringify(boolarr4))
 
 const boolarr5 = bool('1 and 2')
 console.log(JSON.stringify(boolarr5))
+
+const boolarr6 = bool("\"portland\" AND \"cemento\"")
+console.log(JSON.stringify(boolarr6))

@@ -22,3 +22,8 @@ console.log("RESP4: " + JSON.stringify(resp4))
 const search5 = 'Lorem'
 const resp5 = bSearch(text, search5)
 console.log("RESP5: " + JSON.stringify(resp5))
+
+const search6 = "\"portland\" AND \"cemento\""
+const textresp6 = "RETWEET: DavidPenalver ( Esmolillo ) - Sin endocrino en #NavalmoraldelaMata Sin educadora de #diabetes en #Plasencia Vamos en sentido contrario al sentido común. Y al profesional"
+const resp6 = bSearch(textresp6, search6)
+console.log("RESP5: " + JSON.stringify(resp6))
