@@ -1,6 +1,6 @@
 {
   "name": "boolean-search",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Boolean Query Search",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/warlock/boolean-search#readme",
   "dependencies": {
-    "cleanchar": "^0.1.1",
+    "cleanchar": "^0.1.3",
     "tck": "^1.0.7"
   }
 }
