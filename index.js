@@ -9,22 +9,23 @@ module.exports = (text, search, options) => {
   else if (tck.isString(search)) {
     const boolres = searchbool(search)
     const cleantext = ` ${cleanchar(text, options)} `
+    //var debug = false
+    //if (tck.isSet(options) && tck.isSet(options.debug) && options.debug === true) debug = true
     
     if (boolres.length === 1 && boolres[0].length === 1) {
       const stringtocheck = cleanchar(boolres[0][0], options)
-      return cleantext.indexOf(` ${stringtocheck} `) > -1? { res: true, desc: boolres[0][0] } : { res: false }
+      return cleantext.indexOf(` ${stringtocheck} `) > -1? { res: true, search: search, desc: boolres[0][0] } : { res: false }
     } else {
       if (boolres.length > 1) {
         for (let i = 0; i < boolres.length; i++) {
           const finder = andfind(cleantext, boolres[i], options)
-          if (finder.res) {
-            return { res: true, des: finder.desc }
-          }
+          if (finder.res) return { res: true, search: search, des: finder.desc }
         }
         return { res: false }
       } else if (boolres[0].length > 1) {
         const res = andfind(cleantext, boolres[0], options)
-        return res
+        if (res) return { res: true, search: search, des: res.desc }
+        else return  { res: false }
       }
     }
   }
