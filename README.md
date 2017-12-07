@@ -5,6 +5,8 @@ Boolean Query Search
 
 [Github](https://github.com/warlock/boolean-search)
 
+[![Build Status](https://travis-ci.org/warlock/boolean-search.svg?branch=master)](https://travis-ci.org/warlock/boolean-search)
+
 ### NPM Install
 ```sh
 npm i boolean-search -S
