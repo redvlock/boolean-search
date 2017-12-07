@@ -1,11 +1,16 @@
 # boolean-search
 Boolean Query Search
 
+[![npm version](https://badge.fury.io/js/boolean-search.svg)](https://badge.fury.io/js/boolean-search)
+[![GitHub version](https://badge.fury.io/gh/warlock%2Fboolean-search.svg)](https://badge.fury.io/gh/warlock%2Fboolean-search)
+[![Build Status](https://travis-ci.org/warlock/boolean-search.svg?branch=master)](https://travis-ci.org/warlock/boolean-search)
+
+### Repository
+
 [NPM](https://www.npmjs.com/package/boolean-search)
 
 [Github](https://github.com/warlock/boolean-search)
 
-[![Build Status](https://travis-ci.org/warlock/boolean-search.svg?branch=master)](https://travis-ci.org/warlock/boolean-search)
 
 ### NPM Install
 ```sh
