@@ -29,6 +29,11 @@
   "homepage": "https://github.com/warlock/boolean-search#readme",
   "dependencies": {
     "cleanchar": "^0.1.4",
-    "tck": "^1.0.7"
+    "tck": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mocha": "^4.0.1"
   }
 }
