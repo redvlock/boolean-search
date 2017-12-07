@@ -13,7 +13,7 @@ module.exports = (text, search, options) => {
     //if (tck.isSet(options) && tck.isSet(options.debug) && options.debug === true) debug = true
     
     if (boolres.length === 1 && boolres[0].length === 1) {
-      return cleantext.indexOf(` ${boolres[0][0]} `) > -1? { res: true, search: search, desc: boolres[0][0] } : { res: false }
+      return cleantext.indexOf(` ${boolres[0][0]} `) > -1? { res: true, search: search, des: boolres[0][0] } : { res: false }
     } else {
       if (boolres.length > 1) {
         for (let i = 0; i < boolres.length; i++) {

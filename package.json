@@ -4,7 +4,7 @@
   "description": "Boolean Query Search",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
   "devDependencies": {
     "eslint": "^4.12.1",
     "eslint-plugin-mocha": "^4.11.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "mocha-eslint": "^4.1.0"
   }
 }
