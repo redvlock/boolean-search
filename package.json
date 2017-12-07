@@ -1,6 +1,6 @@
 {
   "name": "boolean-search",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Boolean Query Search",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "eslint": "^4.12.1",
-    "eslint-plugin-mocha": "^4.11.0",
     "mocha": "^4.0.1",
     "mocha-eslint": "^4.1.0"
   }
