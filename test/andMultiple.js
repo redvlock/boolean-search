@@ -48,5 +48,26 @@ describe('* Search with MULTIPLE AND condition', () => {
       })
     })
   })
+
+  describe('Found one AND condition WITH double quotes', () => {
+    const search = '"DOLOR" AND "Aliquam varius" AND "ipsum"'
+
+    it('Check results', () => {
+      const res = bSearch(text, search)
+      assert.strictEqual(res.res, true)
+      assert.strictEqual(res.search, search)
+      assert.strictEqual(res.des.length, 3)
+    })
+
+    it('Check found alone words in text', () => {
+      const words = search.split(" AND ")
+      words.forEach(word => {
+        const res2 = bSearch(text, word)
+        assert.strictEqual(res2.res, true)
+        assert.strictEqual(res2.search, word)
+        assert.strictEqual(res2.des, cleanchar(word))
+      })
+    })
+  })
 })
 
